@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="boxandroidlibv2_alert_dialog_cancel">Cancel</string>
+    <string name="boxandroidlibv2_alert_dialog_ok">Submit</string>
+    <string name="boxandroidlibv2_alert_dialog_password">Password</string>
+    <string name="boxandroidlibv2_alert_dialog_text_entry">This website or application is requesting authentication.</string>
+    <string name="boxandroidlibv2_alert_dialog_username">Username</string>
+    <string name="boxandroidlibv2_title_activity_oauth">OAuthActivity</string>
+    <string name="boxandroidlibv2_Select">Select</string>
+    <string name="boxandroidlibv2_Cancel">Cancel</string>
+    <string name="boxandroidlibv2_Please_wait">Please wait…</string>
+    <string name="boxandroidlibv2_Problem_fetching_folder">Problem fetching folder.</string>
+    <string name="boxandroidlibv2_Create_folder">Create folder</string>
+    <string name="app_name">Root Explorer</string>
+    <string name="info_text_weight">0</string>
+    <string name="locale">0</string>
+</resources>

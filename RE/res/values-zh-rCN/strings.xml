@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="boxandroidlibv2_alert_dialog_cancel">取消</string>
+    <string name="boxandroidlibv2_alert_dialog_ok">提交</string>
+    <string name="boxandroidlibv2_alert_dialog_password">密码</string>
+    <string name="boxandroidlibv2_alert_dialog_text_entry">本网站或应用程序请求身份验证.</string>
+    <string name="boxandroidlibv2_alert_dialog_username">用户名</string>
+    <string name="boxandroidlibv2_title_activity_oauth">OAuthActivity</string>
+    <string name="boxandroidlibv2_Select">选择</string>
+    <string name="boxandroidlibv2_Cancel">取消</string>
+    <string name="boxandroidlibv2_Please_wait">请稍候…</string>
+    <string name="boxandroidlibv2_Problem_fetching_folder">问题获取文件夹.</string>
+    <string name="boxandroidlibv2_Create_folder">创建文件夹</string>
+    <string name="app_name">RE管理器</string>
+    <string name="info_text_weight">0</string>
+    <string name="locale">0</string>
+</resources>

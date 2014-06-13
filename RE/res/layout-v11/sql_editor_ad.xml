@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/TextView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0sp" android:layout_marginRight="10.0sp" android:text="!string/sqlite_advert" />
+    <CheckBox android:id="@id/chkDontAskAgain" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0sp" android:layout_marginTop="20.0sp" android:text="!string/dont_ask_again" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0sp" android:divider="?android:dividerHorizontal" android:layout_below="@id/chkSetuid" android:showDividers="beginning" style="?android:attr/buttonBarStyle">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" style="?android:attr/buttonBarStyle">
+            <Button android:id="@id/buttonDownload" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="!string/sqlite_editor" android:layout_weight="1.0" style="?android:attr/buttonBarButtonStyle" />
+            <Button android:id="@id/buttonView" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="!string/internal_viewer" android:layout_weight="1.0" style="?android:attr/buttonBarButtonStyle" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

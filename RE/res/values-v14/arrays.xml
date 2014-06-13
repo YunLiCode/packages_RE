@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="view_mode_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="sort_order_values">
+        <item>name_asc</item>
+        <item>date_asc</item>
+        <item>size_asc</item>
+        <item>type_asc</item>
+        <item>name_desc</item>
+        <item>date_desc</item>
+        <item>size_desc</item>
+    </string-array>
+    <string-array name="info_mode_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="tab_mode_values">
+        <item>visible</item>
+        <item>hidden</item>
+        <item>auto</item>
+    </string-array>
+    <string-array name="icon_set_values">
+        <item>blue</item>
+        <item>yellow</item>
+        <item>orange</item>
+        <item>white</item>
+        <item>grey</item>
+        <item>original</item>
+        <item>custom</item>
+    </string-array>
+    <string-array name="theme_values">
+        <item>dark</item>
+        <item>light</item>
+        <item>light_dark_bar</item>
+        <item>wallpaper</item>
+    </string-array>
+</resources>

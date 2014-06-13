@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="change_owner_width">370</integer>
+    <integer name="permissions_width">410</integer>
+</resources>

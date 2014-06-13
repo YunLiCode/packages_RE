@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.speedsoftware.rootexplorer">
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="true"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_SUPERUSER"/>
+    <uses-permission android:name="com.android.vending.CHECK_LICENSE"/>
+    <application android:icon="@drawable/re_icon" android:label="@string/app_name" android:theme="@style/RE_Main" android:uiOptions="splitActionBarWhenNarrow">
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/app_name" android:launchMode="singleTask" android:name=".RootExplorer">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.MULTIWINDOW_LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="application/zip"/>
+                <data android:mimeType="application/x-tar"/>
+                <data android:mimeType="application/rar"/>
+                <data android:mimeType="text/plain"/>
+                <data android:pathPattern="*.db"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/app_name" android:name=".RootExplorerGetContent">
+            <intent-filter>
+                <action android:name="android.intent.action.GET_CONTENT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.OPENABLE"/>
+                <data android:mimeType="*/*"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".PermissionsActivity" android:theme="@style/RE_Dialog"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name=".ScriptActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:hardwareAccelerated="false" android:name=".DisplayText"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name=".BookmarkList"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name=".SearchCriteria" android:theme="@style/RE_Dialog"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name=".Preferences"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name=".ViewDatabase"/>
+        <activity android:hardwareAccelerated="false" android:name=".ViewTable"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name=".SQLiteEditorAdvert" android:theme="@style/RE_Dialog"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name=".AboutActivity" android:theme="@style/RE_Dialog"/>
+        <activity android:name=".ChangeOwnerActivity" android:theme="@style/RE_Dialog"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name=".OpenWithActivity"/>
+        <service android:name=".BackgroundWorker"/>
+        <activity android:launchMode="singleTask" android:name=".OpStatusActivity" android:theme="@style/RE_Dialog"/>
+        <activity android:name=".SmbServerDetails" android:theme="@style/RE_Dialog"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.box.androidlib.activities.BoxAuthentication"/>
+        <activity android:configChanges="keyboard|orientation" android:launchMode="singleTask" android:name="com.dropbox.client2.android.AuthActivity">
+            <intent-filter>
+                <data android:scheme="db-2bueevyncmm3i1o"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.box.boxandroidlibv2.activities.OAuthActivity"/>
+        <provider android:authorities="com.speedsoftware.rootexplorer.content" android:exported="true" android:multiprocess="false" android:name="GetContentProvider"/>
+        <uses-library android:name="com.sec.android.app.multiwindow" android:required="false"/>
+        <meta-data android:name="com.sec.android.support.multiwindow" android:value="true"/>
+        <meta-data android:name="com.sec.android.multiwindow.DEFAULT_SIZE_W" android:value="632.0dip"/>
+        <meta-data android:name="com.sec.android.multiwindow.DEFAULT_SIZE_H" android:value="598.0dip"/>
+        <meta-data android:name="com.sec.android.multiwindow.MINIMUM_SIZE_W" android:value="632.0dip"/>
+        <meta-data android:name="com.sec.android.multiwindow.MINIMUM_SIZE_H" android:value="598.0dip"/>
+    </application>
+</manifest>

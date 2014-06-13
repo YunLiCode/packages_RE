@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="api_level">14</integer>
+    <integer name="about_width">300</integer>
+    <integer name="change_owner_width">310</integer>
+    <integer name="permissions_width">310</integer>
+</resources>
